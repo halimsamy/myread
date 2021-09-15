@@ -1,0 +1,27 @@
+GET https://reactnd-books-api.udacity.com/books
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+
+###
+
+GET https://reactnd-books-api.udacity.com/books/nggnmAEACAAJ
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+
+###
+
+PUT https://reactnd-books-api.udacity.com/books/nggnmAEACAAJ
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+Content-Type: application/json
+
+{
+    "shelf": "currentlyReading"
+}
+
+###
+
+POST https://reactnd-books-api.udacity.com/search
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+Content-Type: application/json
+
+{
+    "query": "art"
+}

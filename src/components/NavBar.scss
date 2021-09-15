@@ -1,0 +1,47 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  margin-bottom: 1rem;
+
+  .navbar__logo {
+    color: lightgreen;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .navbar__links {
+    a {
+      padding: 0.5rem 1rem;
+      color: white;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0, -0.4, 0.5, 1);
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        margin-top: 0.1rem;
+        background-color: lightgreen;
+        transition: all 0.3s cubic-bezier(0, -0.4, 0.5, 1);
+      }
+
+      &:hover,
+      &.active {
+        color: lightgreen;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,35 @@
+.book-list__item {
+  width: 128px;
+  margin: 0.5rem;
+
+  .title {
+    font-size: 0.8rem;
+  }
+
+  .author {
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+  }
+
+  .head {
+    position: relative;
+
+    .shelf-changer {
+      position: absolute;
+      background-color: lightgreen;
+      background-image: url("../icons/arrow-drop-down.svg");
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      bottom: -1rem;
+      right: -1rem;
+
+      select {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
